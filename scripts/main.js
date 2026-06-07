@@ -33,6 +33,14 @@ const profile = {
       codeUrl: "https://github.com/Edurd00/loja-do-dani",
     },
     {
+      title: "Plataforma de E-commerce SaaS Multi-Nicho",
+      description:
+        "Sistema completo de gestão de e-commerce com painel administrativo dinâmico. Permite aos lojistas personalizarem sua identidade visual (cores, logo, banner), gerenciarem produtos, categorias e status de pedidos em tempo real. A arquitetura utiliza Supabase para persistência de dados, Tailwind CSS para design responsivo e um fluxo de gestão automatizado via banco de dados, eliminando a necessidade de configurações manuais externas.",
+      tags: ["JavaScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Vite", "Painel Administrativo"],
+      demoUrl: "https://projeto-multi-plataforma.vercel.app/",
+      codeUrl: "https://github.com/Edurd00/projeto-multi-plataforma",
+    },
+    {
       title: "Sistema para Restaurante Pequeno",
       description:
         "Modelo de projeto em desenvolvimento para pequenos restaurantes, com possibilidade de cardápio online, pedidos via formulário, reservas, cadastro de clientes e organização das informações em planilha.",
