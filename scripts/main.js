@@ -61,7 +61,7 @@ const profile = {
       title: "Trilha Alura Power BI",
       issuer: "Alura",
       type: "png",
-      fileUrl: "certificados/Trilha Alura Power BI - Alura.png",
+      fileUrl: "certificados/Power BI.png",
       credentialUrl: "https://https://cursos.alura.com.br/user/luiizeduardo63/degree-power-bi-751462/certificate",
     },
     {
