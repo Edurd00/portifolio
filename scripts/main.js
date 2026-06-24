@@ -62,7 +62,7 @@ const profile = {
       issuer: "Alura",
       type: "png",
       fileUrl: "certificados/Power BI.png",
-      credentialUrl: "https://https://cursos.alura.com.br/user/luiizeduardo63/degree-power-bi-751462/certificate",
+      credentialUrl: "https://cursos.alura.com.br/degree/certificate/326f7d07-dbc8-4661-8f84-98c2e660ed58",
     },
     {
       title: "Engenharia de Prompt para IA Generativa",
