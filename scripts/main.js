@@ -13,7 +13,7 @@ const profile = {
       description:
         "Demonstração de formulário avançado em duas etapas para digitalizar inventário, validar dados, organizar respostas e integrar informações com Google Sheets via Apps Script.",
       tags: ["HTML5", "CSS3", "JavaScript", "Google Apps Script", "Google Sheets", "TOTVS"],
-      demoUrl: "https://controle-patrimonial-ipda.netlify.app/",
+      demoUrl: "https://formulario-patrimonio-completo-hwdw.vercel.app/",
       codeUrl: "#",
     },
     {
@@ -37,7 +37,7 @@ const profile = {
       description:
         "Sistema completo de gestão de e-commerce com painel administrativo dinâmico. Permite aos lojistas personalizarem sua identidade visual (cores, logo, banner), gerenciarem produtos, categorias e status de pedidos em tempo real. A arquitetura utiliza Supabase para persistência de dados, Tailwind CSS para design responsivo e um fluxo de gestão automatizado via banco de dados, eliminando a necessidade de configurações manuais externas.",
       tags: ["JavaScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Vite", "Painel Administrativo"],
-      demoUrl: "https://projeto-multi-plataforma.vercel.app/",
+      demoUrl: "https://meu-catalogo-profissional.vercel.app/",
       codeUrl: "https://github.com/Edurd00/projeto-multi-plataforma",
     },
     {
@@ -50,6 +50,13 @@ const profile = {
     },
   ],
   certificates: [
+     {
+      title: "Trilha Analise de Ddados e IA",
+      issuer: "Curso complementar",
+      type: "png",
+      fileUrl: "certificados/Analise de Dados e IA.jpeg",
+      credentialUrl: "https://cursos.alura.com.br/certificate/luiizeduardo63/ingles",
+    },
     {
       title: "Inglês",
       issuer: "Curso complementar",
