@@ -51,18 +51,18 @@ const profile = {
   ],
   certificates: [
      {
-      title: "Trilha Analise de Ddados e IA",
+      title: "Trilha Analise de Dados e IA",
       issuer: "Curso complementar",
       type: "png",
       fileUrl: "certificados/Analise de Dados e IA.jpeg",
-      credentialUrl: "https://cursos.alura.com.br/certificate/luiizeduardo63/ingles",
+      credentialUrl: "#",
     },
     {
       title: "Inglês",
       issuer: "Curso complementar",
       type: "png",
       fileUrl: "certificados/ingles.png",
-      credentialUrl: "https://cursos.alura.com.br/certificate/luiizeduardo63/ingles",
+      credentialUrl: "#",
     },
     {
       title: "Trilha Alura Power BI",
