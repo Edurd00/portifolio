@@ -22,7 +22,7 @@ Site estático profissional com foco em freelancer para landing pages, formulár
 
 ## Como editar seus links
 
-Abra `scripts/main.js` e altere o bloco `contacts`:
+Abra `scripts/data.js` e altere o bloco `contacts`:
 
 - Instagram: coloque seu usuário e link.
 - LinkedIn: coloque seu perfil público.
@@ -32,7 +32,7 @@ Abra `scripts/main.js` e altere o bloco `contacts`:
 
 ## Como adicionar novos projetos
 
-No arquivo `scripts/main.js`, adicione um novo item dentro de `projects`:
+No arquivo `scripts/data.js`, adicione um novo item dentro de `projects`:
 
 ```js
 {
@@ -48,7 +48,7 @@ No arquivo `scripts/main.js`, adicione um novo item dentro de `projects`:
 
 Coloque o arquivo do certificado dentro da pasta `certificados`. Pode ser PDF ou imagem (`.png`, `.jpg`, `.webp`).
 
-Depois, no arquivo `scripts/main.js`, adicione um novo item dentro de `certificates`:
+Depois, no arquivo `scripts/data.js`, adicione um novo item dentro de `certificates`:
 
 ```js
 {

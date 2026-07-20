@@ -508,3 +508,25 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* FAQ Accordion Styles */
+.faq-trigger svg {
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.faq-item.active .faq-trigger svg {
+  transform: rotate(180deg);
+}
+
+.faq-item {
+  transition: border-color 300ms ease, box-shadow 300ms ease;
+}
+
+.faq-item.active {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.04);
+}
+
+.faq-content {
+  transition: max-height 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}

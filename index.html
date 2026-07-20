@@ -85,6 +85,8 @@
           <a class="nav-link" href="#experiencia">Experiência</a>
           <a class="nav-link" href="#certificados">Certificados</a>
           <a class="nav-link" href="#projetos">Projetos</a>
+          <a class="nav-link" href="#orcamento">Orçamento</a>
+          <a class="nav-link" href="#faq">FAQ</a>
           <a class="nav-link" href="#contato">Contato</a>
         </div>
       </nav>
@@ -93,6 +95,8 @@
         <a class="mobile-link" href="#experiencia">Experiência</a>
         <a class="mobile-link" href="#certificados">Certificados</a>
         <a class="mobile-link" href="#projetos">Projetos</a>
+        <a class="mobile-link" href="#orcamento">Orçamento</a>
+        <a class="mobile-link" href="#faq">FAQ</a>
         <a class="mobile-link" href="#contato">Contato</a>
       </div>
     </header>
@@ -112,7 +116,7 @@
               Desenvolvo páginas modernas, responsivas e formulários inteligentes com HTML, CSS,
               JavaScript, Google Sheets e automações que facilitam atendimento, cadastro, pedidos e gestão.
             </p>
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row flex-wrap">
               <a href="#projetos" class="btn-primary">
                 <i data-lucide="briefcase-business" class="h-5 w-5"></i>
                 Ver demonstrações
@@ -120,6 +124,10 @@
               <a href="#contato" class="btn-secondary">
                 <i data-lucide="send" class="h-5 w-5"></i>
                 Solicitar orçamento
+              </a>
+              <a href="assets/curriculo.pdf" download="Curriculo_Luiz_Eduardo_Silva.pdf" class="btn-secondary" aria-label="Baixar Currículo de Luiz Eduardo Silva em PDF">
+                <i data-lucide="download" class="h-5 w-5 text-sky-400"></i>
+                Baixar Currículo (PDF)
               </a>
             </div>
             <div class="mt-10 grid max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4">
@@ -283,6 +291,157 @@
         <div id="projectsGrid" class="grid gap-6 lg:grid-cols-2"></div>
       </section>
 
+      <section id="orcamento" class="section bg-white/[0.025]">
+        <div class="section-heading">
+          <span>Simulador de Projetos</span>
+          <h2>Estime o valor e o prazo do seu projeto em tempo real</h2>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="panel flex flex-col justify-between">
+            <div>
+              <h3 class="panel-title mb-6">Selecione os serviços desejados:</h3>
+              <div class="space-y-4">
+                <!-- Checkbox 1 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Landing Page">
+                  <input type="checkbox" id="srv-lp" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Landing Page" data-price="1200" data-time="5" checked />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Landing Page</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 1.200</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Página de vendas de alta performance, responsiva e otimizada para SEO.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 5 dias úteis
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Checkbox 2 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Formulário Personalizado">
+                  <input type="checkbox" id="srv-form" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Formulário Personalizado" data-price="800" data-time="4" />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Formulário Personalizado</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 800</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Formulários com validações de dados (CPF, telefone), máscaras e visual moderno.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 4 dias úteis
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Checkbox 3 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Automação Sheets">
+                  <input type="checkbox" id="srv-auto" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Automação Sheets" data-price="1000" data-time="5" />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Automação Google Sheets</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 1.000</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Integração via Google Apps Script para salvar dados de forma instantânea em planilhas.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 5 dias úteis
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel flex flex-col justify-between border-sky-500/20 bg-sky-500/5 shadow-lg relative overflow-hidden">
+            <div class="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-sky-500/10 blur-2xl"></div>
+            <div>
+              <h3 class="panel-title text-sky-400 flex items-center gap-2">
+                <i data-lucide="calculator" class="h-5 w-5"></i>
+                Resumo da Estimativa
+              </h3>
+              <p class="text-sm text-slate-300 leading-6 mt-4">
+                O valor e o prazo são estimativos de base. Projetos integrados podem obter descontos progressivos e otimização no tempo de desenvolvimento.
+              </p>
+
+              <div class="mt-8 space-y-4 border-t border-white/10 pt-6">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 text-sm">Investimento Estimado:</span>
+                  <strong class="text-2xl font-extrabold text-white" id="calc-price">R$ 1.200,00</strong>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 text-sm">Prazo de Entrega:</span>
+                  <strong class="text-lg font-extrabold text-white" id="calc-time">5 dias úteis</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noreferrer" class="btn-primary w-full flex items-center justify-center gap-2" aria-label="Enviar estimativa de orçamento para Luiz Eduardo no WhatsApp">
+                <i data-lucide="message-circle" class="h-5 w-5"></i>
+                Solicitar orçamento simulado
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section bg-white/[0.015]">
+        <div class="section-heading">
+          <span>Perguntas Frequentes</span>
+          <h2>Dúvidas comuns sobre meus serviços de freelancer</h2>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- Accordion Item 1 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1" aria-label="Abrir resposta sobre: Qual é o prazo médio de entrega para um projeto?">
+              <span>Qual é o prazo médio de entrega para um projeto?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-1" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-1">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                O prazo varia conforme a complexidade. Landing pages e formulários simples costumam ser entregues em um período de 5 a 10 dias. Projetos mais robustos ou automações avançadas no Google Sheets podem levar de 2 a 3 semanas. Sempre acordamos um cronograma claro antes de iniciar.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2" aria-label="Abrir resposta sobre: Como funciona a integração com o Google Sheets? É seguro?">
+              <span>Como funciona a integração com o Google Sheets? É seguro?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-2" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-2">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Sim, é totalmente seguro! Desenvolvo formulários web que se conectam diretamente ao Google Sheets através de scripts personalizados (Google Apps Script) hospedados na sua própria conta Google. Isso significa que seus dados vão direto para a sua planilha, sem passar por servidores de terceiros.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3" aria-label="Abrir resposta sobre: Você oferece suporte pós-entrega?">
+              <span>Você oferece suporte pós-entrega?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-3" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-3">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Com certeza! Todos os meus projetos incluem 30 dias de suporte gratuito pós-entrega para correção de eventuais bugs ou dúvidas de uso. Além disso, forneço um vídeo explicativo gravado ensinando você ou sua equipe a operar o sistema ou planilha integrada.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4" aria-label="Abrir resposta sobre: Onde o site fica hospedado? Terei custos mensais?">
+              <span>Onde o site fica hospedado? Terei custos mensais?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-4" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-4">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Para sites institucionais e landing pages, utilizo plataformas modernas de hospedagem gratuita de alta performance (como Netlify, Vercel ou GitHub Pages). O único custo recorrente que você terá é o registro do seu domínio personalizado (ex: seunegocio.com.br, que custa cerca de R$ 40 por ano no Registro.br).
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contato" class="section">
         <div class="section-heading">
           <span>Contato</span>
@@ -393,6 +552,6 @@
     </a>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
