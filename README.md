@@ -2,6 +2,24 @@
 
 Site estático profissional com foco em freelancer para landing pages, formulários, sites, sistemas simples para pequenos negócios e automações. Usa Tailwind CSS, JavaScript e estrutura simples para publicar no Netlify.
 
+## Novas Funcionalidades e Aprimoramentos
+
+### 1. Filtro Dinâmico de Projetos
+- Adicionados botões de filtro no topo da seção de projetos ("Todos", "E-commerce/SaaS", "Formulários/Automação").
+- Lógica implementada em `scripts/main.js` para filtrar os cards dinamicamente na página sem necessidade de recarregamento, mantendo o visual limpo e interativo.
+
+### 2. Modal de Visualização de Certificados (Lightbox)
+- Em vez de abrir os certificados em uma nova aba diretamente, os usuários agora podem clicar na imagem de pré-visualização de qualquer certificado para visualizá-lo em tela cheia diretamente na página através de um modal lightbox responsivo.
+- O modal pode ser fechado clicando no botão de fechar (ícone `x`), clicando fora da imagem do certificado ou simplesmente pressionando a tecla `ESC` no teclado.
+
+### 3. Botão Flutuante do WhatsApp
+- Adicionado um botão fixo no canto inferior direito para acesso rápido ao WhatsApp com mensagem de orçamento personalizada e um efeito hover elástico e suave.
+
+### 4. Acessibilidade (A11y) & SEO
+- Inclusão de atributos `aria-label` descritivos e acessíveis para leitores de tela em todos os botões e links.
+- Meta Tags do Open Graph e Twitter Cards incluídas para uma exibição profissional de preview de link em redes sociais (WhatsApp, LinkedIn, etc.).
+- Favicon dinâmico em formato SVG inline incluído para uma aba de navegador personalizada.
+
 ## Como editar seus links
 
 Abra `scripts/main.js` e altere o bloco `contacts`:

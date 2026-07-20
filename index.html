@@ -7,6 +7,24 @@
       name="description"
       content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets."
     />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luiz-eduardo.netlify.app/" />
+    <meta property="og:title" content="Luiz Eduardo Silva | Freelancer Web e Automação" />
+    <meta property="og:description" content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets." />
+    <meta property="og:image" content="assets/images/perfil-linkedin.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://luiz-eduardo.netlify.app/" />
+    <meta property="twitter:title" content="Luiz Eduardo Silva | Freelancer Web e Automação" />
+    <meta property="twitter:description" content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets." />
+    <meta property="twitter:image" content="assets/images/perfil-linkedin.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-weight=%22800%22 fill=%22%2338bdf8%22>LE</text></svg>">
+
     <title>Luiz Eduardo Silva | Freelancer Web e Automação</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -221,10 +239,36 @@
       </section>
 
       <section id="projetos" class="section">
-        <div class="section-heading">
+        <div class="section-heading animate-fade-in">
           <span>Projetos Recentes</span>
           <h2>Demonstrações reais do que posso construir e evoluir para clientes.</h2>
         </div>
+
+        <!-- Filtros de Projetos -->
+        <div class="mb-8 flex flex-wrap gap-3 justify-start sm:justify-start">
+          <button
+            class="filter-btn btn-active"
+            data-filter="all"
+            aria-label="Filtrar por todos os projetos"
+          >
+            Todos
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="ecommerce-saas"
+            aria-label="Filtrar por projetos de E-commerce e SaaS"
+          >
+            E-commerce/SaaS
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="form-automation"
+            aria-label="Filtrar por projetos de Formulários e Automação"
+          >
+            Formulários/Automação
+          </button>
+        </div>
+
         <div id="projectsGrid" class="grid gap-6 lg:grid-cols-2"></div>
       </section>
 
@@ -249,6 +293,37 @@
     <footer class="border-t border-white/10 px-5 py-8 text-center text-sm text-slate-400">
       <p>© <span id="year"></span> Luiz Eduardo Silva. Portfólio profissional.</p>
     </footer>
+
+    <!-- Modal de Visualização de Certificados (Lightbox) -->
+    <div id="certModal" class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/85 p-4 backdrop-blur-md opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Visualização do Certificado">
+      <div class="relative max-w-4xl w-full flex flex-col items-center justify-center scale-95 transition-transform duration-300" id="certModalContainer">
+        <!-- Botão de Fechar -->
+        <button
+          id="closeCertModal"
+          class="absolute -top-12 right-0 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 hover:scale-105 transition-all"
+          aria-label="Fechar visualização do certificado"
+        >
+          <i data-lucide="x" class="h-6 w-6"></i>
+        </button>
+        <!-- Conteúdo do Modal -->
+        <div class="w-full max-h-[80vh] flex items-center justify-center overflow-hidden rounded-lg bg-navy-900 border border-white/10 p-2 shadow-2xl">
+          <img id="certModalImage" src="" alt="Certificado ampliado" class="max-w-full max-h-[75vh] object-contain rounded" />
+        </div>
+        <!-- Título do Certificado -->
+        <h3 id="certModalTitle" class="mt-4 text-center text-lg font-bold text-white px-4"></h3>
+      </div>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a
+      href="https://wa.me/5511940662259?text=Ol%C3%A1%20Luiz,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento."
+      target="_blank"
+      rel="noreferrer"
+      class="whatsapp-float"
+      aria-label="Falar com Luiz Eduardo no WhatsApp para solicitar orçamento"
+    >
+      <i data-lucide="message-circle" class="h-7 w-7 text-white"></i>
+    </a>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="scripts/main.js"></script>
