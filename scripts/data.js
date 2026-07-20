@@ -5,7 +5,7 @@ export const profile = {
     { label: "LinkedIn", value: "/in/luiz-eduardo-988a451b8", href: "https://www.linkedin.com/in/luiz-eduardo-988a451b8/", icon: "linkedin" },
     { label: "GitHub", value: "Edurd00", href: "https://github.com/Edurd00", icon: "github" },
     { label: "WhatsApp", value: "+55 (11) 94066-2259", href: "https://wa.me/5511940662259", icon: "message-circle" },
-    { label: "E-mail", value: "luiizeduardo62@gmail.com", href: "mailto:luiizeduardo63@gmail.com", icon: "mail" },
+    { label: "E-mail", value: "luiizeduardo63@gmail.com", href: "mailto:luiizeduardo63@gmail.com", icon: "mail" },
   ],
   projects: [
     {
