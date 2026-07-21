@@ -5,7 +5,7 @@ export const profile = {
     { label: "LinkedIn", value: "/in/luiz-eduardo-988a451b8", href: "https://www.linkedin.com/in/luiz-eduardo-988a451b8/", icon: "linkedin" },
     { label: "GitHub", value: "Edurd00", href: "https://github.com/Edurd00", icon: "github" },
     { label: "WhatsApp", value: "+55 (11) 94066-2259", href: "https://wa.me/5511940662259", icon: "message-circle" },
-    { label: "E-mail", value: "luiizeduardo63@gmail.com", href: "mailto:luiizeduardo63@gmail.com", icon: "mail" },
+    { label: "E-mail", value: "luiizeduardo62@gmail.com", href: "mailto:luiizeduardo62@gmail.com", icon: "mail" },
   ],
   projects: [
     {
@@ -15,7 +15,7 @@ export const profile = {
       description:
         "Demonstração de formulário avançado em duas etapas para digitalizar inventário, validar dados, organizar respostas e integrar informações com Google Sheets via Apps Script.",
       tags: ["HTML5", "CSS3", "JavaScript", "Google Apps Script", "Google Sheets", "TOTVS"],
-      demoUrl: "https://formulario-patrimonio-tqq6.vercel.app/",
+      demoUrl: "https://formulario-patrimonio-completo-hwdw.vercel.app/",
       codeUrl: "#",
       challenge: "Equipes de logística e patrimônio gastavam horas com formulários em papel ou controles locais inconsistentes, gerando desorganização e perda de informações históricas no inventário.",
       solution: "Criamos um formulário web inteligente em duas etapas com validações rigorosas e integração direta via Google Apps Script para o Google Sheets, salvando as informações em tempo real e de forma segura.",
@@ -48,19 +48,6 @@ export const profile = {
       result: "Aumento expressivo nas solicitações de produtos personalizados, com as informações de pedidos chegando prontas e formatadas para a equipe de atendimento."
     },
     {
-  id: "catalogo-pro-saas",
-  title: "Catálogo Pro - Landing Page e Plataforma SaaS Multi-Nicho",
-  category: "ecommerce-saas",
-  description:
-    "Landing page de alta conversão e ecossistema SaaS completo focado em liberar lojistas e restaurantes de taxas de delivery. A solução permite catálogo interativo com adicionais/grade de produtos (P, M, G), envio automático de pedidos formatados para o WhatsApp e painel administrativo em tempo real para alteração de estoque e preços via mobile.",
-  tags: ["React", "Tailwind CSS", "Lucide Icons", "SaaS Multi-Nicho", "Vite", "WhatsApp API"],
-  demoUrl: "https://catalogopro-landingpage.vercel.app/",
-  codeUrl: "#",
-  challenge: "Lojistas e restaurantes sofriam com altas taxas de comissão (até 30%) em plataformas tradicionais e perdiam tempo no atendimento manual anotando pedidos via áudio e mensagens desorganizadas.",
-  solution: "Desenvolvemos uma landing page de alta conversão focada em venda direta e um sistema de catálogo digital responsivo (Mobile-First) onde o cliente monta o pedido sozinho com cálculo de adicionais e envia formatado para o WhatsApp.",
-  result: "Comissão ZERO e 100% de lucro para o lojista, além de redução drástica do tempo de atendimento manual e aumento no ticket médio por pedido."
-  },
-    {
       id: "ecommerce-saas",
       title: "Plataforma de E-commerce SaaS Multi-Nicho",
       category: "ecommerce-saas",
@@ -68,7 +55,7 @@ export const profile = {
         "Sistema completo de gestão de e-commerce com painel administrativo dinâmico. Permite aos lojistas personalizarem sua identidade visual (cores, logo, banner), gerenciarem produtos, categorias e status de pedidos em tempo real. A arquitetura utiliza Supabase para persistência de dados, Tailwind CSS para design responsivo e um fluxo de gestão automatizado via banco de dados, eliminando a necessidade de configurações manuais externas.",
       tags: ["JavaScript", "Tailwind CSS", "Supabase", "PostgreSQL", "Vite", "Painel Administrativo"],
       demoUrl: "https://meu-catalogo-profissional.vercel.app/",
-      codeUrl: "#",
+      codeUrl: "https://github.com/Edurd00/projeto-multi-plataforma",
       challenge: "Pequenos lojistas necessitavam de uma ferramenta dinâmica e independente para gerenciar múltiplos catálogos sem precisar lidar com integrações de código complexas.",
       solution: "Desenvolvemos um ecossistema SaaS completo com banco de dados PostgreSQL integrado via Supabase e um painel de controle administrativo customizado com Tailwind CSS.",
       result: "Autonomia completa para gerenciar produtos, cadastros e status de pedidos instantaneamente, centralizado sob uma única arquitetura robusta."
