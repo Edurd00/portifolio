@@ -5,9 +5,22 @@ export const profile = {
     { label: "LinkedIn", value: "/in/luiz-eduardo-988a451b8", href: "https://www.linkedin.com/in/luiz-eduardo-988a451b8/", icon: "linkedin" },
     { label: "GitHub", value: "Edurd00", href: "https://github.com/Edurd00", icon: "github" },
     { label: "WhatsApp", value: "+55 (11) 94066-2259", href: "https://wa.me/5511940662259", icon: "message-circle" },
-    { label: "E-mail", value: "luiizeduardo62@gmail.com", href: "mailto:luiizeduardo62@gmail.com", icon: "mail" },
+    { label: "E-mail", value: "luiizeduardo63@gmail.com", href: "mailto:luiizeduardo63@gmail.com", icon: "mail" },
   ],
   projects: [
+    {
+  id: "anderson-streaming",
+  title: "Landing Page para Serviço de Streaming / IPTV",
+  category: "landing-page",
+  description:
+    "Landing page de alta conversão desenvolvida para serviços de streaming e IPTV, com design dark moderno, acentos em dourado, mockups interativos de telas e integração direta de vendas via WhatsApp.",
+  tags: ["HTML5", "Tailwind CSS", "JavaScript", "Landing Page", "UI/UX", "Conversão"],
+  demoUrl: "https://andersonsreaming-iptv.vercel.app/",
+  codeUrl: "#",
+  challenge: "Serviços de streaming e IPTV frequentemente enfrentam desconfiança de clientes e dificuldades na exibição de planos de assinatura, necessitando de uma interface visualmente profissional e de navegação intuitiva.",
+  solution: "Desenvolvimento de uma landing page responsiva em Tailwind CSS com tema escuro de luxo (gold glow), simuladores visuais de aplicativo para Smart TV e mobile, seção dinâmica de FAQ interativo em JS e CTAs diretos direcionando para o WhatsApp.",
+  result: "Aumento na taxa de conversão para solicitações de testes grátis, excelente velocidade de carregamento e melhoria imediata na percepção de valor e autoridade do serviço."
+},
     {
       id: "patrimonial",
       title: "Sistema de Controle Patrimonial",
@@ -82,13 +95,13 @@ export const profile = {
       fileUrl: "certificados/analise-de-dados-e-ia.jpeg",
       credentialUrl: "#",
     },
-    {
-      title: "Inglês",
-      issuer: "Curso complementar",
-      type: "png",
-      fileUrl: "certificados/ingles.png",
-      credentialUrl: "#",
-    },
+    // {
+    //   title: "Inglês",
+    //   issuer: "Curso complementar",
+    //   type: "png",
+    //   fileUrl: "certificados/ingles.png",
+    //   credentialUrl: "#",
+    // },
     {
       title: "Trilha Alura Power BI",
       issuer: "Alura",
@@ -103,27 +116,27 @@ export const profile = {
       fileUrl: "certificados/engenharia-de-prompt.png",
       credentialUrl: "https://cursos.alura.com.br/user/luiizeduardo63/course/engenharia-prompt-criando-prompts-eficazes-ia-generativa/certificate",
     },
-    {
-      title: "IA: explorando o potencial da inteligência artificial generativa",
-      issuer: "Alura",
-      type: "png",
-      fileUrl: "certificados/ia.png",
-      credentialUrl: "https://cursos.alura.com.br/user/luiizeduardo63/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate",
-    },
-    {
-      title: "Excel: domine o editor de planilhas",
-      issuer: "Alura",
-      type: "png",
-      fileUrl: "certificados/excel-domine-o-editor-de-planilhas.png",
-      credentialUrl: "https://cursos.alura.com.br/certificate/luiizeduardo63/excel-domine-editor-planilhas",
-    },
-    {
-      title: "Funções com Excel: operações matemáticas e filtros",
-      issuer: "Alura",
-      type: "png",
-      fileUrl: "certificados/funcoes-com-excel-operacoes-matematicas-e-filtros.png",
-      credentialUrl: "https://cursos.alura.com.br/user/luiizeduardo63/course/funcoes-excel-operacoes-matematicas-filtros/certificate",
-    },
+    // {
+    //   title: "IA: explorando o potencial da inteligência artificial generativa",
+    //   issuer: "Alura",
+    //   type: "png",
+    //   fileUrl: "certificados/ia.png",
+    //   credentialUrl: "https://cursos.alura.com.br/user/luiizeduardo63/course/ia-explorando-potencial-inteligencia-artificial-generativa/certificate",
+    // },
+    // {
+    //   title: "Excel: domine o editor de planilhas",
+    //   issuer: "Alura",
+    //   type: "png",
+    //   fileUrl: "certificados/excel-domine-o-editor-de-planilhas.png",
+    //   credentialUrl: "https://cursos.alura.com.br/certificate/luiizeduardo63/excel-domine-editor-planilhas",
+    // },
+    // {
+    //   title: "Funções com Excel: operações matemáticas e filtros",
+    //   issuer: "Alura",
+    //   type: "png",
+    //   fileUrl: "certificados/funcoes-com-excel-operacoes-matematicas-e-filtros.png",
+    //   credentialUrl: "https://cursos.alura.com.br/user/luiizeduardo63/course/funcoes-excel-operacoes-matematicas-filtros/certificate",
+    // },
     {
       title: "Google Data Analytics",
       issuer: "Coursera",
