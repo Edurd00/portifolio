@@ -28,7 +28,7 @@ export const profile = {
       description:
         "Demonstração de formulário avançado em duas etapas para digitalizar inventário, validar dados, organizar respostas e integrar informações com Google Sheets via Apps Script.",
       tags: ["HTML5", "CSS3", "JavaScript", "Google Apps Script", "Google Sheets", "TOTVS"],
-      demoUrl: "https://formulario-patrimonio-completo-hwdw.vercel.app/",
+      demoUrl: "https://formulario-patrimonio-tqq6.vercel.app/",
       codeUrl: "#",
       challenge: "Equipes de logística e patrimônio gastavam horas com formulários em papel ou controles locais inconsistentes, gerando desorganização e perda de informações históricas no inventário.",
       solution: "Criamos um formulário web inteligente em duas etapas com validações rigorosas e integração direta via Google Apps Script para o Google Sheets, salvando as informações em tempo real e de forma segura.",
