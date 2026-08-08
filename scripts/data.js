@@ -22,6 +22,19 @@ export const profile = {
   result: "Aumento na taxa de conversão para solicitações de testes grátis, excelente velocidade de carregamento e melhoria imediata na percepção de valor e autoridade do serviço."
 },
     {
+  id: "localizacao-ipda",
+  title: "Localização IPDA - Sistema GEO-VALIG",
+  category: "full-stack-web",
+  description:
+    "Sistema geoespacial robusto para validação e visualização de 12.000+ unidades eclesiásticas, com integração de grafos hierárquicos, clustering dinâmico por estados e processamento de dados em larga escala.",
+  tags: ["Next.js", "TypeScript", "Leaflet", "PostgreSQL", "Superbase", "Tailwind CSS"],
+  demoUrl: "https://geolocalizacoes-ipda.vercel.app/",
+  codeUrl: "#",
+  challenge: "A gestão de mais de 12.000 unidades físicas exigia um controle geográfico descentralizado e inconsistente, com a necessidade urgente de visualizar hierarquias corporativas complexas (coligações) em um mapa de alta precisão.",
+  solution: "Desenvolvemos um ecossistema completo em Next.js com processamento de geocoding, armazenamento em Neon DB, e um front-end interativo com Leaflet. Implementamos um motor de grafos para desenhar conexões hierárquicas dinâmicas e clustering inteligente segmentado por regiões geográficas.",
+  result: "Centralização do controle geográfico da instituição, permitindo navegação fluida entre milhares de pontos, automação no cálculo de hierarquias de coligações e suporte a operações de alta carga com processamento em lote (Bulk Upsert)."
+},
+    {
       id: "patrimonial",
       title: "Sistema de Controle Patrimonial",
       category: "form-automation",
