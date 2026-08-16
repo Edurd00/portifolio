@@ -8,20 +8,8 @@ export const profile = {
     { label: "E-mail", value: "luiizeduardo63@gmail.com", href: "mailto:luiizeduardo63@gmail.com", icon: "mail" },
   ],
   projects: [
-    {
-  id: "anderson-streaming",
-  title: "Landing Page para Serviço de Streaming / IPTV",
-  category: "landing-page",
-  description:
-    "Landing page de alta conversão desenvolvida para serviços de streaming e IPTV, com design dark moderno, acentos em dourado, mockups interativos de telas e integração direta de vendas via WhatsApp.",
-  tags: ["HTML5", "Tailwind CSS", "JavaScript", "Landing Page", "UI/UX", "Conversão"],
-  demoUrl: "https://andersonsreaming-iptv.vercel.app/",
-  codeUrl: "#",
-  challenge: "Serviços de streaming e IPTV frequentemente enfrentam desconfiança de clientes e dificuldades na exibição de planos de assinatura, necessitando de uma interface visualmente profissional e de navegação intuitiva.",
-  solution: "Desenvolvimento de uma landing page responsiva em Tailwind CSS com tema escuro de luxo (gold glow), simuladores visuais de aplicativo para Smart TV e mobile, seção dinâmica de FAQ interativo em JS e CTAs diretos direcionando para o WhatsApp.",
-  result: "Aumento na taxa de conversão para solicitações de testes grátis, excelente velocidade de carregamento e melhoria imediata na percepção de valor e autoridade do serviço."
-},
-    {
+ 
+  {
   id: "localizacao-ipda",
   title: "Localização IPDA - Sistema GEO-VALIG",
   category: "full-stack-web",
@@ -41,7 +29,7 @@ export const profile = {
       description:
         "Demonstração de formulário avançado em duas etapas para digitalizar inventário, validar dados, organizar respostas e integrar informações com Google Sheets via Apps Script.",
       tags: ["HTML5", "CSS3", "JavaScript", "Google Apps Script", "Google Sheets", "TOTVS"],
-      demoUrl: "https://formulario-patrimonio-tqq6.vercel.app/",
+      demoUrl: "https://formulario-patrimonio.vercel.app/",
       codeUrl: "#",
       challenge: "Equipes de logística e patrimônio gastavam horas com formulários em papel ou controles locais inconsistentes, gerando desorganização e perda de informações históricas no inventário.",
       solution: "Criamos um formulário web inteligente em duas etapas com validações rigorosas e integração direta via Google Apps Script para o Google Sheets, salvando as informações em tempo real e de forma segura.",
@@ -60,19 +48,19 @@ export const profile = {
       solution: "Formulário responsivo com máscaras automatizadas de preenchimento, validação de CPF pontual e verificação de duplicidade diretamente em uma base online do Google Sheets.",
       result: "Cadastro de novos registros unificado, limpo e à prova de falhas com relatórios prontos e acessíveis pelo celular ou computador."
     },
-    {
-      id: "ecommerce-igrejas",
-      title: "E-commerce para Igrejas e Produtos Personalizados",
-      category: "ecommerce-saas",
-      description:
-        "Plataforma de comércio eletrônico desenvolvida para igrejas e público cristão, com catálogo organizado por categorias, cálculo automático de orçamento para produtos personalizados, seleção de tamanhos, carrinho de compras, integração com WhatsApp e arquitetura escalável para futuras integrações com banco de dados e painel administrativo.",
-      tags: ["HTML5", "Tailwind CSS", "JavaScript", "E-commerce", "Google Sheets", "Responsivo"],
-      demoUrl: "https://loja-dani.vercel.app/",
-      codeUrl: "https://github.com/Edurd00/loja-do-dani",
-      challenge: "Falta de um canal simples e eficiente para que membros pudessem escolher produtos e tamanhos personalizados de forma direta, sem processos burocráticos.",
-      solution: "E-commerce elegante com catálogo categorizado, carrinho dinâmico de compras com seleção de tamanhos e finalização rápida de orçamentos integrada ao WhatsApp.",
-      result: "Aumento expressivo nas solicitações de produtos personalizados, com as informações de pedidos chegando prontas e formatadas para a equipe de atendimento."
-    },
+       {
+  id: "anderson-streaming",
+  title: "Landing Page para Serviço de Streaming / IPTV",
+  category: "landing-page",
+  description:
+    "Landing page de alta conversão desenvolvida para serviços de streaming e IPTV, com design dark moderno, acentos em dourado, mockups interativos de telas e integração direta de vendas via WhatsApp.",
+  tags: ["HTML5", "Tailwind CSS", "JavaScript", "Landing Page", "UI/UX", "Conversão"],
+  demoUrl: "https://andersonsreaming-iptv.vercel.app/",
+  codeUrl: "#",
+  challenge: "Serviços de streaming e IPTV frequentemente enfrentam desconfiança de clientes e dificuldades na exibição de planos de assinatura, necessitando de uma interface visualmente profissional e de navegação intuitiva.",
+  solution: "Desenvolvimento de uma landing page responsiva em Tailwind CSS com tema escuro de luxo (gold glow), simuladores visuais de aplicativo para Smart TV e mobile, seção dinâmica de FAQ interativo em JS e CTAs diretos direcionando para o WhatsApp.",
+  result: "Aumento na taxa de conversão para solicitações de testes grátis, excelente velocidade de carregamento e melhoria imediata na percepção de valor e autoridade do serviço."
+},
     {
       id: "ecommerce-saas",
       title: "Plataforma de E-commerce SaaS Multi-Nicho",
