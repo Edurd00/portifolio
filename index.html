@@ -7,6 +7,24 @@
       name="description"
       content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets."
     />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://luiz-eduardo.netlify.app/" />
+    <meta property="og:title" content="Luiz Eduardo Silva | Freelancer Web e Automação" />
+    <meta property="og:description" content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets." />
+    <meta property="og:image" content="assets/images/perfil-linkedin.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://luiz-eduardo.netlify.app/" />
+    <meta property="twitter:title" content="Luiz Eduardo Silva | Freelancer Web e Automação" />
+    <meta property="twitter:description" content="Portfólio freelancer de Luiz Eduardo Silva para criação de landing pages, formulários, sites profissionais, sistemas para pequenos negócios e automações com Google Sheets." />
+    <meta property="twitter:image" content="assets/images/perfil-linkedin.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-weight=%22800%22 fill=%22%2338bdf8%22>LE</text></svg>">
+
     <title>Luiz Eduardo Silva | Freelancer Web e Automação</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -44,7 +62,16 @@
   <body class="bg-navy-950 text-slate-100 antialiased">
     <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy-950/78 backdrop-blur-xl">
       <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#inicio" class="text-sm font-extrabold tracking-wide text-white">Luiz Eduardo</a>
+        <div class="flex items-center gap-3">
+          <a href="#inicio" class="text-sm font-extrabold tracking-wide text-white shrink-0">Luiz Eduardo</a>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-2.5 py-1 text-[10px] font-bold text-emerald-400 border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.1)]">
+            <span class="relative flex h-1.5 w-1.5">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
+            </span>
+            <span class="hidden min-[400px]:inline">Disponível para novos projetos</span>
+          </span>
+        </div>
         <button
           id="menuButton"
           class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 text-slate-200 md:hidden"
@@ -58,6 +85,8 @@
           <a class="nav-link" href="#experiencia">Experiência</a>
           <a class="nav-link" href="#certificados">Certificados</a>
           <a class="nav-link" href="#projetos">Projetos</a>
+          <a class="nav-link" href="#orcamento">Orçamento</a>
+          <a class="nav-link" href="#faq">FAQ</a>
           <a class="nav-link" href="#contato">Contato</a>
         </div>
       </nav>
@@ -66,6 +95,8 @@
         <a class="mobile-link" href="#experiencia">Experiência</a>
         <a class="mobile-link" href="#certificados">Certificados</a>
         <a class="mobile-link" href="#projetos">Projetos</a>
+        <a class="mobile-link" href="#orcamento">Orçamento</a>
+        <a class="mobile-link" href="#faq">FAQ</a>
         <a class="mobile-link" href="#contato">Contato</a>
       </div>
     </header>
@@ -85,7 +116,7 @@
               Desenvolvo páginas modernas, responsivas e formulários inteligentes com HTML, CSS,
               JavaScript, Google Sheets e automações que facilitam atendimento, cadastro, pedidos e gestão.
             </p>
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row flex-wrap">
               <a href="#projetos" class="btn-primary">
                 <i data-lucide="briefcase-business" class="h-5 w-5"></i>
                 Ver demonstrações
@@ -93,6 +124,10 @@
               <a href="#contato" class="btn-secondary">
                 <i data-lucide="send" class="h-5 w-5"></i>
                 Solicitar orçamento
+              </a>
+              <a href="assets/curriculo.pdf" download="Curriculo_Luiz_Eduardo_Silva.pdf" class="btn-secondary" aria-label="Baixar Currículo de Luiz Eduardo Silva em PDF">
+                <i data-lucide="download" class="h-5 w-5 text-sky-400"></i>
+                Baixar Currículo (PDF)
               </a>
             </div>
             <div class="mt-10 grid max-w-2xl grid-cols-2 gap-4 sm:grid-cols-4">
@@ -108,6 +143,8 @@
                 src="assets/images/perfil-linkedin.png"
                 alt="Foto profissional de Luiz Eduardo Silva"
                 class="h-full w-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -221,11 +258,188 @@
       </section>
 
       <section id="projetos" class="section">
-        <div class="section-heading">
+        <div class="section-heading animate-fade-in">
           <span>Projetos Recentes</span>
           <h2>Demonstrações reais do que posso construir e evoluir para clientes.</h2>
         </div>
+
+        <!-- Filtros de Projetos -->
+        <div class="mb-8 flex flex-wrap gap-3 justify-start sm:justify-start">
+          <button
+            class="filter-btn btn-active"
+            data-filter="all"
+            aria-label="Filtrar por todos os projetos"
+          >
+            Todos
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="ecommerce-saas"
+            aria-label="Filtrar por projetos de E-commerce e SaaS"
+          >
+            E-commerce/SaaS
+          </button>
+          <button
+            class="filter-btn"
+            data-filter="form-automation"
+            aria-label="Filtrar por projetos de Formulários e Automação"
+          >
+            Formulários/Automação
+          </button>
+        </div>
+
         <div id="projectsGrid" class="grid gap-6 lg:grid-cols-2"></div>
+      </section>
+
+      <section id="orcamento" class="section bg-white/[0.025]">
+        <div class="section-heading">
+          <span>Simulador de Projetos</span>
+          <h2>Estime o valor e o prazo do seu projeto em tempo real</h2>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div class="panel flex flex-col justify-between">
+            <div>
+              <h3 class="panel-title mb-6">Selecione os serviços desejados:</h3>
+              <div class="space-y-4">
+                <!-- Checkbox 1 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Landing Page">
+                  <input type="checkbox" id="srv-lp" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Landing Page" data-price="500" data-time="5" checked />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Landing Page</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 500</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Página de vendas de alta performance, responsiva e otimizada para SEO.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 5 dias úteis
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Checkbox 2 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Formulário Personalizado">
+                  <input type="checkbox" id="srv-form" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Formulário Personalizado" data-price="300" data-time="4" />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Formulário Personalizado</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 300</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Formulários com validações de dados (CPF, telefone), máscaras e visual moderno.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 4 dias úteis
+                    </span>
+                  </div>
+                </label>
+
+                <!-- Checkbox 3 -->
+                <label class="flex items-start gap-4 p-4 rounded-xl border border-white/10 bg-navy-950/40 hover:bg-white/5 cursor-pointer transition-all group" aria-label="Selecionar serviço: Automação Sheets">
+                  <input type="checkbox" id="srv-auto" class="service-checkbox mt-1 h-5 w-5 rounded border-white/20 bg-navy-900 text-sky-500 focus:ring-sky-500/50 cursor-pointer" data-name="Automação Sheets" data-price="600" data-time="5" />
+                  <div class="flex-1">
+                    <div class="flex justify-between items-center">
+                      <strong class="text-white group-hover:text-sky-400 transition-colors">Automação Google Sheets</strong>
+                      <span class="text-sky-400 font-extrabold text-sm">R$ 600</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-1">Integração via Google Apps Script para salvar dados de forma instantânea em planilhas.</p>
+                    <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 mt-1">
+                      <i data-lucide="clock-3" class="h-3 w-3"></i> Prazo: 5 dias úteis
+                    </span>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel flex flex-col justify-between border-sky-500/20 bg-sky-500/5 shadow-lg relative overflow-hidden">
+            <div class="absolute -right-16 -top-16 h-32 w-32 rounded-full bg-sky-500/10 blur-2xl"></div>
+            <div>
+              <h3 class="panel-title text-sky-400 flex items-center gap-2">
+                <i data-lucide="calculator" class="h-5 w-5"></i>
+                Resumo da Estimativa
+              </h3>
+              <p class="text-sm text-slate-300 leading-6 mt-4">
+                O valor e o prazo são estimativos de base. Projetos integrados podem obter descontos progressivos e otimização no tempo de desenvolvimento.
+              </p>
+
+              <div class="mt-8 space-y-4 border-t border-white/10 pt-6">
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 text-sm">Investimento Estimado:</span>
+                  <strong class="text-2xl font-extrabold text-white" id="calc-price">R$ 1.200,00</strong>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-slate-400 text-sm">Prazo de Entrega:</span>
+                  <strong class="text-lg font-extrabold text-white" id="calc-time">5 dias úteis</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <a href="#" id="calc-whatsapp-btn" target="_blank" rel="noreferrer" class="btn-primary w-full flex items-center justify-center gap-2" aria-label="Enviar estimativa de orçamento para Luiz Eduardo no WhatsApp">
+                <i data-lucide="message-circle" class="h-5 w-5"></i>
+                Solicitar orçamento simulado
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section bg-white/[0.015]">
+        <div class="section-heading">
+          <span>Perguntas Frequentes</span>
+          <h2>Dúvidas comuns sobre meus serviços de freelancer</h2>
+        </div>
+        <div class="max-w-3xl mx-auto space-y-4">
+          <!-- Accordion Item 1 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-1" id="faq-btn-1" aria-label="Abrir resposta sobre: Qual é o prazo médio de entrega para um projeto?">
+              <span>Qual é o prazo médio de entrega para um projeto?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-1" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-1">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                O prazo varia conforme a complexidade. Landing pages e formulários simples costumam ser entregues em um período de 5 a 10 dias. Projetos mais robustos ou automações avançadas no Google Sheets podem levar de 2 a 3 semanas. Sempre acordamos um cronograma claro antes de iniciar.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 2 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-2" id="faq-btn-2" aria-label="Abrir resposta sobre: Como funciona a integração com o Google Sheets? É seguro?">
+              <span>Como funciona a integração com o Google Sheets? É seguro?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-2" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-2">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Sim, é totalmente seguro! Desenvolvo formulários web que se conectam diretamente ao Google Sheets através de scripts personalizados (Google Apps Script) hospedados na sua própria conta Google. Isso significa que seus dados vão direto para a sua planilha, sem passar por servidores de terceiros.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 3 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-3" id="faq-btn-3" aria-label="Abrir resposta sobre: Você oferece suporte pós-entrega?">
+              <span>Você oferece suporte pós-entrega?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-3" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-3">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Com certeza! Todos os meus projetos incluem 30 dias de suporte gratuito pós-entrega para correção de eventuais bugs ou dúvidas de uso. Além disso, forneço um vídeo explicativo gravado ensinando você ou sua equipe a operar o sistema ou planilha integrada.
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion Item 4 -->
+          <div class="faq-item border border-white/10 rounded-xl bg-navy-900/60 overflow-hidden transition-all duration-300">
+            <button class="faq-trigger w-full flex items-center justify-between p-5 text-left font-bold text-white hover:bg-white/5 transition-all focus:outline-none" aria-expanded="false" aria-controls="faq-answer-4" id="faq-btn-4" aria-label="Abrir resposta sobre: Onde o site fica hospedado? Terei custos mensais?">
+              <span>Onde o site fica hospedado? Terei custos mensais?</span>
+              <i data-lucide="chevron-down" class="h-5 w-5 text-sky-400 transition-transform duration-300 pointer-events-none"></i>
+            </button>
+            <div id="faq-answer-4" class="faq-content max-h-0 overflow-hidden transition-all duration-300" role="region" aria-labelledby="faq-btn-4">
+              <div class="p-5 pt-0 text-slate-300 leading-7 text-sm border-t border-white/5 bg-navy-950/40">
+                Para sites institucionais e landing pages, utilizo plataformas modernas de hospedagem gratuita de alta performance (como Netlify, Vercel ou GitHub Pages). O único custo recorrente que você terá é o registro do seu domínio personalizado (ex: seunegocio.com.br, que custa cerca de R$ 40 por ano no Registro.br).
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="contato" class="section">
@@ -250,7 +464,94 @@
       <p>© <span id="year"></span> Luiz Eduardo Silva. Portfólio profissional.</p>
     </footer>
 
+    <!-- Modal de Visualização de Certificados (Lightbox) -->
+    <div id="certModal" class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/85 p-4 backdrop-blur-md opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Visualização do Certificado">
+      <div class="relative max-w-4xl w-full flex flex-col items-center justify-center scale-95 transition-transform duration-300" id="certModalContainer">
+        <!-- Botão de Fechar -->
+        <button
+          id="closeCertModal"
+          class="absolute -top-12 right-0 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white hover:bg-white/20 hover:scale-105 transition-all"
+          aria-label="Fechar visualização do certificado"
+        >
+          <i data-lucide="x" class="h-6 w-6"></i>
+        </button>
+        <!-- Conteúdo do Modal -->
+        <div class="w-full max-h-[80vh] flex items-center justify-center overflow-hidden rounded-lg bg-navy-900 border border-white/10 p-2 shadow-2xl">
+          <img id="certModalImage" src="" alt="Certificado ampliado" class="max-w-full max-h-[75vh] object-contain rounded" />
+        </div>
+        <!-- Título do Certificado -->
+        <h3 id="certModalTitle" class="mt-4 text-center text-lg font-bold text-white px-4"></h3>
+      </div>
+    </div>
+
+    <!-- Modal de Detalhes do Projeto (Estudo de Caso) -->
+    <div id="projectDetailsModal" class="fixed inset-0 z-[10000] hidden items-center justify-center bg-black/85 p-4 backdrop-blur-md opacity-0 transition-opacity duration-300" role="dialog" aria-modal="true" aria-label="Estudo de Caso e Detalhes do Projeto">
+      <div class="relative max-w-2xl w-full scale-95 transition-transform duration-300 bg-navy-900 border border-white/10 rounded-2xl p-6 shadow-2xl" id="projectDetailsContainer">
+        <!-- Botão de Fechar -->
+        <button
+          id="closeProjectModal"
+          class="absolute top-4 right-4 flex h-8 w-8 items-center justify-center rounded-full border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white hover:scale-105 transition-all"
+          aria-label="Fechar detalhes do projeto"
+        >
+          <i data-lucide="x" class="h-4 w-4"></i>
+        </button>
+
+        <!-- Conteúdo do Estudo de Caso -->
+        <div>
+          <span class="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-2.5 py-1 text-xs font-bold text-sky-400 border border-sky-500/20">
+            Estudo de Caso
+          </span>
+          <h3 id="projectModalTitle" class="mt-3 text-2xl font-extrabold text-white"></h3>
+
+          <div class="mt-6 space-y-4 max-h-[60vh] overflow-y-auto pr-2">
+            <!-- O Desafio -->
+            <div class="space-y-1.5">
+              <h4 class="text-sm font-extrabold text-sky-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="alert-circle" class="h-4 w-4"></i> O Desafio
+              </h4>
+              <p id="projectModalChallenge" class="text-sm leading-6 text-slate-300"></p>
+            </div>
+
+            <!-- A Solução -->
+            <div class="space-y-1.5 pt-2">
+              <h4 class="text-sm font-extrabold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="check-circle-2" class="h-4 w-4"></i> A Solução
+              </h4>
+              <p id="projectModalSolution" class="text-sm leading-6 text-slate-300"></p>
+            </div>
+
+            <!-- Resultados -->
+            <div class="space-y-1.5 pt-2">
+              <h4 class="text-sm font-extrabold text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
+                <i data-lucide="trending-up" class="h-4 w-4"></i> Resultados obtidos
+              </h4>
+              <p id="projectModalResult" class="text-sm leading-6 text-slate-300"></p>
+            </div>
+
+            <!-- Tecnologias -->
+            <div class="space-y-2 pt-2">
+              <h4 class="text-sm font-extrabold text-slate-400 uppercase tracking-wider">
+                Tecnologias Utilizadas
+              </h4>
+              <div id="projectModalTechList" class="flex flex-wrap gap-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a
+      href="https://wa.me/5511940662259?text=Ol%C3%A1%20Luiz,%20vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20um%20or%C3%A7amento."
+      target="_blank"
+      rel="noreferrer"
+      class="whatsapp-float"
+      aria-label="Falar com Luiz Eduardo no WhatsApp para solicitar orçamento"
+    >
+      <i data-lucide="message-circle" class="h-7 w-7 text-white"></i>
+    </a>
+
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
